@@ -94,14 +94,16 @@ var compressedbytearray = brotli.compressArray(decompressedbytearray, quality); 
 Here you can see a small benchmark on an i7 2600k CPU.
 
 Brotli Benchmark -q 1 plrabn12.txt
-| Language | compress | decompress |
-| ------ | ------ | ------ |
-| JavaScript (v8) | 414 | 190 |
-| PHP 5 | 82114 | 4672 |
-| Python | 11339 | 5157 |
-| Java | 353 | 100 |
-| C# | 402 | 80 |
-| original C(++) | 24 | 13 |
+
+ Language | compress | decompress 
+ ------ | ------ | ------ 
+ JavaScript (v8) | 414 | 190 
+ PHP 5 | 82114 | 4672 |
+ Python | 11339 | 5157 
+ Java | 353 | 100 |
+ C# | 402 | 80 
+ original C(++) | 24 | 13 
+ 
 (ms) lower is better
 
 
