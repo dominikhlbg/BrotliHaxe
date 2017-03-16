@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace></RootNamespace>
+    <AssemblyName>Main</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+	
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x64'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x64\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x64'">
+    <OutputPath>bin\x64\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x64</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  
+  </ItemGroup>
+  <ItemGroup>
+	
+    <Compile Include="src\encode\Static_dict_lut.cs"/>
+	
+    <Compile Include="src\cs\Boot.cs"/>
+	
+    <Compile Include="src\Std.cs"/>
+	
+    <Compile Include="src\encode\cluster\HistogramPair.cs"/>
+	
+    <Compile Include="src\haxe\lang\Null.cs"/>
+	
+    <Compile Include="src\haxe\io\Output.cs"/>
+	
+    <Compile Include="src\encode\Command_functions.cs"/>
+	
+    <Compile Include="src\encode\streams\BrotliOut.cs"/>
+	
+    <Compile Include="src\haxe\Log.cs"/>
+	
+    <Compile Include="src\encode\BinaryHeap.cs"/>
+	
+    <Compile Include="src\decode\huffman\HuffmanCode.cs"/>
+	
+    <Compile Include="src\encode\Bit_cost.cs"/>
+	
+    <Compile Include="src\Array.cs"/>
+	
+    <Compile Include="src\decode\Huffman.cs"/>
+	
+    <Compile Include="src\cs\internal\Function.cs"/>
+	
+    <Compile Include="src\encode\Brotli_bit_stream.cs"/>
+	
+    <Compile Include="src\encode\hash\HashLongestMatchQuickly.cs"/>
+	
+    <Compile Include="src\encode\Metablock.cs"/>
+	
+    <Compile Include="src\decode\Context.cs"/>
+	
+    <Compile Include="src\encode\Context.cs"/>
+	
+    <Compile Include="src\encode\hash\HashLongestMatch.cs"/>
+	
+    <Compile Include="src\encode\Port.cs"/>
+	
+    <Compile Include="src\decode\Transforms.cs"/>
+	
+    <Compile Include="src\encode\metablock\MetaBlockSplit.cs"/>
+	
+    <Compile Include="src\encode\Find_match_length.cs"/>
+	
+    <Compile Include="src\decode\streams\BrotliMemOutput.cs"/>
+	
+    <Compile Include="src\encode\Encode.cs"/>
+	
+    <Compile Include="src\encode\brotli_bit_stream\BlockSplitCode.cs"/>
+	
+    <Compile Include="src\encode\backward_references\ZopfliNode.cs"/>
+	
+    <Compile Include="src\Sys.cs"/>
+	
+    <Compile Include="src\haxe\io\Eof.cs"/>
+	
+    <Compile Include="src\encode\streams\BrotliIn.cs"/>
+	
+    <Compile Include="src\encode\RingBuffer.cs"/>
+	
+    <Compile Include="src\Type.cs"/>
+	
+    <Compile Include="src\decode\Port.cs"/>
+	
+    <Compile Include="src\Date.cs"/>
+	
+    <Compile Include="src\decode\State.cs"/>
+	
+    <Compile Include="src\sys\io\FileOutput.cs"/>
+	
+    <Compile Include="src\haxe\io\Error.cs"/>
+	
+    <Compile Include="src\FunctionMalloc.cs"/>
+	
+    <Compile Include="src\encode\Histogram_functions.cs"/>
+	
+    <Compile Include="src\encode\metablock\BlockSplit.cs"/>
+	
+    <Compile Include="src\encode\Prefix.cs"/>
+	
+    <Compile Include="src\encode\command\Command.cs"/>
+	
+    <Compile Include="src\encode\Hash.cs"/>
+	
+    <Compile Include="src\encode\hash\BackwardMatch.cs"/>
+	
+    <Compile Include="src\encode\Literal_cost.cs"/>
+	
+    <Compile Include="src\decode\Decode.cs"/>
+	
+    <Compile Include="src\DefaultFunctions.cs"/>
+	
+    <Compile Include="src\Reflect.cs"/>
+	
+    <Compile Include="src\encode\prefix\PrefixCodeRange.cs"/>
+	
+    <Compile Include="src\haxe\io\Bytes.cs"/>
+	
+    <Compile Include="src\haxe\Constraints.cs"/>
+	
+    <Compile Include="src\encode\backward_references\StartPosQueue.cs"/>
+	
+    <Compile Include="src\encode\entropy_encode\HuffmanTree.cs"/>
+	
+    <Compile Include="src\encode\metablock\BlockSplitter.cs"/>
+	
+    <Compile Include="src\decode\bit_reader\BrotliBitReader.cs"/>
+	
+    <Compile Include="src\encode\backward_references\ZopfliCostModel.cs"/>
+	
+    <Compile Include="src\encode\encode\BrotliParams.cs"/>
+	
+    <Compile Include="src\decode\transform\Transform.cs"/>
+	
+    <Compile Include="src\encode\streams\BrotliMemOut.cs"/>
+	
+    <Compile Include="src\decode\streams\BrotliInput.cs"/>
+	
+    <Compile Include="src\encode\Transform.cs"/>
+	
+    <Compile Include="src\encode\entropy_encode\EntropyCode.cs"/>
+	
+    <Compile Include="src\encode\Fast_log.cs"/>
+	
+    <Compile Include="src\encode\block_splitter\BlockSplitIterator.cs"/>
+	
+    <Compile Include="src\decode\streams\BrotliMemInput.cs"/>
+	
+    <Compile Include="src\sys\FileSystem.cs"/>
+	
+    <Compile Include="src\encode\Write_bits.cs"/>
+	
+    <Compile Include="src\decode\state\BrotliState.cs"/>
+	
+    <Compile Include="src\encode\Dictionary_hash.cs"/>
+	
+    <Compile Include="src\encode\metablock\ContextBlockSplitter.cs"/>
+	
+    <Compile Include="src\cs\internal\StringExt.cs"/>
+	
+    <Compile Include="src\cs\internal\Runtime.cs"/>
+	
+    <Compile Include="src\cs\Lib.cs"/>
+	
+    <Compile Include="src\encode\histogram\Histogram.cs"/>
+	
+    <Compile Include="src\sys\io\FileInput.cs"/>
+	
+    <Compile Include="src\cs\io\NativeOutput.cs"/>
+	
+    <Compile Include="src\encode\Backward_references.cs"/>
+	
+    <Compile Include="src\encode\streams\BrotliMemIn.cs"/>
+	
+    <Compile Include="src\decode\Prefix.cs"/>
+	
+    <Compile Include="src\decode\prefix\PrefixCodeRange.cs"/>
+	
+    <Compile Include="src\cs\internal\HxObject.cs"/>
+	
+    <Compile Include="src\encode\Cluster.cs"/>
+	
+    <Compile Include="src\cs\internal\Exceptions.cs"/>
+	
+    <Compile Include="src\encode\brotli_bit_stream\BlockEncoder.cs"/>
+	
+    <Compile Include="src\Math.cs"/>
+	
+    <Compile Include="src\decode\Dictionary.cs"/>
+	
+    <Compile Include="src\cs\internal\FieldLookup.cs"/>
+	
+    <Compile Include="src\decode\Streams.cs"/>
+	
+    <Compile Include="src\decode\streams\BrotliOutput.cs"/>
+	
+    <Compile Include="src\sys\io\File.cs"/>
+	
+    <Compile Include="src\encode\Entropy_encode.cs"/>
+	
+    <Compile Include="src\encode\encode\BrotliCompressor.cs"/>
+	
+    <Compile Include="src\encode\hash\Hashers.cs"/>
+	
+    <Compile Include="src\Main.cs"/>
+	
+    <Compile Include="src\encode\Static_dict.cs"/>
+	
+    <Compile Include="src\encode\Block_splitter.cs"/>
+	
+    <Compile Include="src\decode\huffman\HuffmanTreeGroup.cs"/>
+	
+    <Compile Include="src\haxe\io\BytesBuffer.cs"/>
+	
+    <Compile Include="src\cs\io\NativeInput.cs"/>
+	
+    <Compile Include="src\encode\static_dict_lut\DictWord.cs"/>
+	
+    <Compile Include="src\encode\Dictionary.cs"/>
+	
+    <Compile Include="src\Brotli.cs"/>
+	
+    <Compile Include="src\haxe\ds\IntMap.cs"/>
+	
+    <Compile Include="src\decode\BitReader.cs"/>
+	
+    <Compile Include="src\haxe\io\Input.cs"/>
+	
+  </ItemGroup>
+  
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
